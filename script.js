@@ -64,13 +64,13 @@ $(function() {
     Morris.Donut({
         element: 'morris-donut-chart',
         data: [{
-            label: "Download Sales",
-            value: 12
+            label: "Passed",
+            value: 42
         }, {
-            label: "In-Store Sales",
+            label: "Not executed",
             value: 30
         }, {
-            label: "Mail-Order Sales",
+            label: "Failed",
             value: 20
         }],
         resize: true
@@ -79,37 +79,44 @@ $(function() {
     Morris.Bar({
         element: 'morris-bar-chart',
         data: [{
-            y: '2006',
+            y: 'Sunday',
             a: 100,
-            b: 90
+            b: 90,
+            c: 180
         }, {
-            y: '2007',
+            y: 'Monday',
             a: 75,
-            b: 65
+            b: 65,
+            c: 190,
         }, {
-            y: '2008',
+            y: 'Tuesday',
             a: 50,
-            b: 40
+            b: 40,
+            c: 150
         }, {
-            y: '2009',
+            y: 'Wednesday',
             a: 75,
-            b: 65
+            b: 65,
+            c: 120,
         }, {
-            y: '2010',
+            y: 'Thursday',
             a: 50,
-            b: 40
+            b: 40,
+            c: 145,
         }, {
-            y: '2011',
+            y: 'Friday',
             a: 75,
-            b: 65
+            b: 65,
+            c: 100
         }, {
-            y: '2012',
+            y: 'Saturday',
             a: 100,
-            b: 90
+            b: 90,
+            c: 130
         }],
         xkey: 'y',
-        ykeys: ['a', 'b'],
-        labels: ['Series A', 'Series B'],
+        ykeys: ['a', 'b', 'c'],
+        labels: ['Failed', 'Not executed', 'Passed'],
         hideHover: 'auto',
         resize: true
     });
