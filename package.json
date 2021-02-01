@@ -1,0 +1,26 @@
+{
+  "name": "testcasedashboard",
+  "version": "1.0.0",
+  "description": "A testcase dashboard to track and manage Jira test cases",
+  "main": "connection.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "npm start"
+  },
+  "dependencies": {
+    "request": "^2.88.2",
+    "mysql": "2.18.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dantusaikamal/Jira-Testcases-Dashboard.git"
+  },
+  "author": "Dantu Sai Kiran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dantusaikamal/Jira-Testcases-Dashboard/issues"
+  },
+  "homepage": "https://github.com/Dantusaikamal/Jira-Testcases-Dashboard#readme"
+}
