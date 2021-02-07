@@ -1,5 +1,9 @@
+
 $(function() {
 
+    $allPassed = mysql_query("SELECT passed FROM alltime_data WHERE passed = '$allPassed'");
+    $result = mysql_fetch_array($allPassed);
+    
     Morris.Area({
         element: 'morris-area-chart',
         data: [{
@@ -65,7 +69,7 @@ $(function() {
         element: 'morris-donut-chart',
         data: [{
             label: "Passed",
-            value: 42
+            value: 40
         }, {
             label: "Not executed",
             value: 30
